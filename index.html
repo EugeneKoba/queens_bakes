@@ -1,38 +1,51 @@
 <!DOCTYPE HTML>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link rel="stylesheet" type="text/css" href="styles.css">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 <head>
 	<title>Reviews - Queen's Beauty</title>
 </head>
 <body>
+<!-- Nav-Bar -->
+<nav>
+    <div class="nav-container">
+        <img src="menu_icon.png" alt="menu_icon" class="menu-icon">
+        <img src="text_based_logo.png" alt="Queen's_Bakes_logo." class="text-based-logo">
+        <img src="search_icon.png" alt="search_icon" class="search-icon">
+    </div>
+</nav>
 
 <section>
     <!-- Title -->
     <div class="container">
         <div class="section-title">
-            <h1>Reviews</h1>
+            <h1>Customer Reviews .</h1>
+            <div class="line"></div>
             <span class="line-seperator"></span>
-            <p>Some words from our satisfied customers! We are lucky to have some of our our customers have been kind enough to leave us so many wonderful reviews!</p>
-        </div>
+            <p class="review-message">A word from our customers!</p>
+        
 
-    <!-- Reviews Box --> 
-    <div class="review-box">
-        <div class="image-container">
-            <img src="Linked-In_Image.jpeg" id="customer-img" alt="Customer_Photo" height = 200px>
+            <!-- Reviews Box --> 
+            <div class="review-box">
+                <div class="image-container">
+                    <img src="customer_0.jpg" id="customer-img" alt="Customer_Photo" height = 200px>
+                </div>
+                <h3 id="customer-name">Sabrina Lockthorn</h3>
+                <p id="customer-job">Hairdresser</p>
+                <p id="customer-description">This product was very good quality! I would recommend it to others!</p>
+                <!-- Slider Buttons -->
+                <button id="prev-btn">
+                    <img src="previous-picture.png" alt="prev_btn" class="prev-btn" height="50px">
+                </button>
+                <button id="next-btn">
+                    <img src="next-picture.png" alt="next_btn" class="next-btn" height="50px">
+                </button>
+        </div>    
         </div>
-       <h3 id="customer-name">Eugene Annan</h3>
-       <p id="customer-job">Web Developer</p>
-       <p id="customer-description">This product was very good quality! I would recommend it to others!</p>
-       <!-- Slider Buttons -->
-       <button id="prev-btn">
-        <img src="previous-picture.png" alt="prev_btn" class="prev-btn" height="50px">
-       </button>
-       <button id="next-btn">
-        <img src="next-picture.png" alt="next_btn" class="next-btn" height="50px">
-       </button>
-    </div>
     </div>
 </section>
 

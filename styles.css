@@ -1,1 +1,134 @@
-   
+body {
+    box-sizing: border-box;
+    width: 100%;
+    font-family: 'Open Sans', sans-serif;
+    background-color: black;
+    padding: 0px;
+    margin: 0px;
+}
+
+@font-face {
+    font-family: Calligri_Bold_Italic;
+    src: url(Calligri_Bold_Italic.ttf);
+}
+
+/* Nav-Bar Styles */
+ 
+nav {
+    position: absolute;
+    width: 100vw;
+    background-color: #ffc2be;
+    z-index: 99;
+    margin: 0;
+    padding: 0;
+}
+
+nav .nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .nav-container img {
+    position: relative;
+    height: 50px;
+    min-height: 50px;
+    padding: 15px 0;
+    cursor: pointer;
+}
+
+nav .nav-container .menu-icon {
+    height: 35px;
+    min-height: 35px;
+    padding-left: 30px;
+    transition: all 0.2s;
+}
+
+nav .nav-container .search-icon {
+    height: 45px;
+    min-height: 45px;
+    padding-right: 30px;
+    transition: all 0.2s;
+}
+
+nav .nav-container .text-based-logo {
+    height: 65px;
+    min-height: 65px;
+}
+
+nav .nav-container .menu-icon:hover {
+    transform: scale(1.2);
+}
+
+nav .nav-container .search-icon:hover {
+    transform: scale(1.2);
+}
+
+/* Reviews Section Styles */
+
+.container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.section-title h1 {
+    font-family: Calligri_Bold_Italic;
+    font-size: 56px;
+    color: #ffc2be;
+    margin: 10px 0;
+}
+
+.section-title .review-message {
+    color: white;
+}
+
+.line {
+    width: 160px;
+    height: 5px;
+    background: #ffc2be;
+    padding: 0 30px;
+    display: inline-block;
+}
+
+.review-box {
+    position: relative;
+    box-sizing: content-box;
+    max-width: 750px;
+    width: 100%;
+    padding: 20px 0;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-shadow: 10px 10px #ffc2be;
+    border-radius: 5px;
+    background-color: whitesmoke;
+    margin: 10px;
+}
+
+#customer-img {
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+    border-style: solid;
+    border-width: 4px;
+    border-radius: 50%;
+    border-color: #ffc2be;
+}
+
+#customer-description {
+    font-size: 16px;
+    font-weight: 100;
+    font-style: italic;
+    padding: 0 30px;
+}
+
+.review-box button{
+    position: relative;
+    border-radius: 5px;
+    background-color: #ffc2be;
+    margin: 0 20px;
+}
