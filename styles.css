@@ -38,22 +38,22 @@ nav .nav-container img {
 }
 
 nav .nav-container .menu-icon {
-    height: 35px;
-    min-height: 35px;
+    /* height: 35px;
+    min-height: 35px; */
     padding-left: 30px;
     transition: all 0.2s;
 }
 
 nav .nav-container .search-icon {
-    height: 45px;
-    min-height: 45px;
+    /* height: 45px;
+    min-height: 45px; */
     padding-right: 30px;
     transition: all 0.2s;
 }
 
 nav .nav-container .text-based-logo {
-    height: 65px;
-    min-height: 65px;
+    height: 85px;
+    min-height: 85px;
 }
 
 nav .nav-container .menu-icon:hover {
@@ -99,25 +99,26 @@ nav .nav-container .search-icon:hover {
     box-sizing: content-box;
     max-width: 750px;
     width: 100%;
-    padding: 20px 0;
+    padding: 20px 10px 20px 0;
     justify-content: center;
     align-items: center;
     text-align: center;
     box-shadow: 10px 10px #ffc2be;
     border-radius: 5px;
     background-color: whitesmoke;
-    margin: 10px;
+    margin: 30px;
 }
 
 #customer-img {
-    height: 200px;
-    width: 200px;
+    height: 175px;
+    width: 175px;
     object-fit: cover;
     border-style: solid;
     border-width: 4px;
     border-radius: 50%;
     border-color: #ffc2be;
 }
+
 
 #customer-description {
     font-size: 16px;
