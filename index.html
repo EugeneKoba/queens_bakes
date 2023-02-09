@@ -17,40 +17,52 @@
 <nav>
     <div class="nav-container">
         <img src="menu_icon.png" alt="menu_icon" class="menu-icon">
-        <img src="text_based_logo.png" alt="Queen's_Bakes_logo." class="text-based-logo">
+        <img src="text_based_logo.png" alt="Queen's_Bakes_logo" class="text-based-logo">
+        <img src="image_based_logo.png" alt="Queen's_Bakes_logo" class="g image-based-logo"></i>
         <img src="search_icon.png" alt="search_icon" class="search-icon">
     </div>
 </nav>
 
-<section>
-    <!-- Title -->
+<!-- Review Section -->
+<section class="review-section">
     <div class="container">
-        <div class="section-title">
-            <h1>Customer Reviews </h1>
-            <div class="line"></div>
-            <span class="line-seperator"></span>
-            <p class="review-message">A word from our customers!</p>
-        
-
-            <!-- Reviews Box --> 
-            <div class="review-box">
-                <div class="image-container">
-                    <img src="customer_0.jpg" id="customer-img" alt="Customer_Photo" height = 200px>
+        <div class="row">
+            <!-- Prev Button -->
+            <button id="prev-btn" class="carousel-control left carousel-control-prev" data-slide="prev">
+                <img src="previous-picture.png" alt="prev_btn" class="prev-btn" height="50px">
+            </button>
+            <!-- Review Box -->
+            <div id="review-box" class="col-8 col-center">
+                <!-- Title -->
+                <h1 id="title">Customer Reviews</h1>
+                <!-- Line Seperator -->
+                <div class="line"></div>
+                <span class="line-seperator"></span>    
+                <!-- Customer Review Box Contents -->
+                <div id="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div id="image-container">
+                                <img src="" alt="Customer-Image" id="customer-img" height="150px">
+                            </div>
+                            <div class="customer-text">
+                                <i id="customer-description"></i>
+                            </div>
+                            <div class="customer-info">
+                                <p id="customer-name"></p>
+                                <p id="customer-job"></p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <h3 id="customer-name">Sabrina Lockthorn</h3>
-                <p id="customer-job">Hairdresser</p>
-                <p id="customer-description">This product was very good quality! I would recommend it to others!</p>
-                <!-- Slider Buttons -->
-                <button id="prev-btn">
-                    <img src="previous-picture.png" alt="prev_btn" class="prev-btn" height="50px">
-                </button>
-                <button id="next-btn">
-                    <img src="next-picture.png" alt="next_btn" class="next-btn" height="50px">
-                </button>
-        </div>    
+            </div>
+            <!-- Next Button -->
+            <button id="next-btn" class="carousel-control right carousel-control-next" data-slide="next">
+                <img src="next-picture.png" alt="next_btn" class="next-btn" height="50px">
+            </button>
         </div>
     </div>
-</section>
+
 
   <!--    JAVASCRIPT SECTION   -->
 <script src="script.js"></script>

@@ -10,23 +10,23 @@ const nextBtn = document.querySelector(".next-btn")
 const customerReviewsArray = [
     {
         customerId: 1,
-        customerName: "Nana Akufo-Addo",
-        customerJob: "Operations Assistant",
-        customerDescription: "This service is amazing! I can't wait to try this service again! Requested a birthday cake and in my haste selected the wrong date for delivery! I was sure they could do nothing as I realised late but they changed the date and delivered a quality cake that made a special day that much more so! I could not speak higher of this truly fantastic company! Thank you guys!!!",
+        customerName: "Geraldine Scott",
+        customerJob: "Travel Guide",
+        customerDescription: "I accidently selected the wrong date for my Birthday Cake delivery, and they changed the date and delivered a quality cake that made a special day that much more so! I could not speak higher of this truly fantastic company! Thank you guys!!!",
         customerImg: "customer_1.jpg",
     }, 
     {
         customerId: 2,
         customerName: "Stacey Earnhart",
         customerJob: "Nanny",
-        customerDescription: "I wanted to buy something different for my friend for her birthday 🎂🥳 I choose a carrot cake. She ate the lot in 2 days with the help of her husband. I will definitely be purchasing from here again! This service is wonderful! I would definitely recommend this to my other colleagues & friends!",
+        customerDescription: "I wanted to buy something different for my friend for her birthday 🎂🥳 I chose a carrot cake. She ate the lot in 2 days with the help of her husband. I will definitely be purchasing from here again!",
         customerImg: "customer_2.jpg",
     },
     {
         customerId: 3,
-        customerName: "Jessica Efua Jakson",
-        customerJob: "Secondary School Teacher",
-        customerDescription: "This service is spectacular! I would 100% come back to purchase more!! Beautiful cake, very well packaged and delivered on time. Excellent customer service communication throughout I would definitely order again and recommend to anyone looking for a special cake with a hassle free service, and the cake tasted delicious!",
+        customerName: "Jessica Jakson",
+        customerJob: "School Teacher",
+        customerDescription: "This service is spectacular! I would 100% come back to purchase more!! Beautiful cake, Excellent customer service, very well packaged and delivered on time!",
         customerImg: "customer_3.jpg",
     }
 ]   
@@ -40,7 +40,7 @@ window.addEventListener("DOMContentLoaded", function() {
 // Function to link Objects to Webpage
 function getPerson(i) {
     let firstItem = customerReviewsArray[i]
-    nameEl.textContent = customerReviewsArray[i].customerName
+    nameEl.textContent = customerReviewsArray[i].customerName + ", "
     jobEl.textContent = customerReviewsArray[i].customerJob
     descriptionEl.textContent = customerReviewsArray[i].customerDescription
     imgEl.src = customerReviewsArray[i].customerImg

@@ -13,7 +13,7 @@ body {
 }
 
 /* Nav-Bar Styles */
- 
+
 nav {
     position: absolute;
     width: 100vw;
@@ -27,6 +27,7 @@ nav .nav-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 80px;
 }
 
 nav .nav-container img {
@@ -45,8 +46,8 @@ nav .nav-container .menu-icon {
 }
 
 nav .nav-container .search-icon {
-    /* height: 45px;
-    min-height: 45px; */
+    height: 60px;
+    min-height: 60px;
     padding-right: 30px;
     transition: all 0.2s;
 }
@@ -54,6 +55,10 @@ nav .nav-container .search-icon {
 nav .nav-container .text-based-logo {
     height: 85px;
     min-height: 85px;
+}
+
+nav .nav-container .image-based-logo {
+    display: none;
 }
 
 nav .nav-container .menu-icon:hover {
@@ -64,72 +69,138 @@ nav .nav-container .search-icon:hover {
     transform: scale(1.2);
 }
 
-/* Reviews Section Styles */
+/* Media Query to change Nav Bar size & contents for Small Phones */
+ 
+@media only screen and (max-width: 425px) {
+    .nav-container {
+        height: 80%;
+    }
 
-.container {
-    height: 100vh;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+    /* When the screen is < 425px, the logo changes type */
+
+    nav .nav-container .text-based-logo {
+        display: none;
+    }  
+    
+    nav .nav-container .image-based-logo {
+        display: block;
+        height: 70px;
+    }
 }
 
-.section-title h1 {
+/* Title Styles */
+
+#title {
     font-family: Calligri_Bold_Italic;
-    font-size: 56px;
-    color: #ffc2be;
-    margin: 10px 0;
-}
-
-.section-title .review-message {
-    color: white;
+    font-size: 52px;
+    text-align: center;
+    color: black;
+    margin: 25px 0 -12px 0;
+    position: relative;
 }
 
 .line {
-    width: 160px;
+    display: inline-block;
+    width: 160px; 
     height: 5px;
-    background: #ffc2be;
+    background: black;
     padding: 0 30px;
+    margin: 15px 0 25px 0;
+}
+
+/* Review Box Carousel Styles */
+
+#review-box {
+    max-width: 650px;
+    margin-top: 110px;
+    background-color: #f6e4d9;
+    border-radius: 20px;
+    text-align: center;
+    align-items: center;
+}
+
+.container p {
     display: inline-block;
 }
 
-.review-box {
-    position: relative;
-    box-sizing: content-box;
-    max-width: 750px;
-    width: 100%;
-    padding: 20px 10px 20px 0;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    box-shadow: 10px 10px #ffc2be;
-    border-radius: 5px;
-    background-color: whitesmoke;
-    margin: 30px;
+.col-center {
+    margin: 0 auto;
 }
 
-#customer-img {
-    height: 175px;
-    width: 175px;
-    object-fit: cover;
-    border-style: solid;
-    border-width: 4px;
-    border-radius: 50%;
-    border-color: #ffc2be;
+#carousel {
+    margin: 110px auto;
+    padding: 0 80px;
+    background-color: yellow;
+    z-index: 99;
 }
 
-
-#customer-description {
+.carousel-item {
     font-size: 16px;
-    font-weight: 100;
-    font-style: italic;
-    padding: 0 30px;
+    min-height: 300px;
+    max-height: 450px;
+    text-align: center;
+    overflow: scroll;
 }
 
-.review-box button{
+.carousel-item #image-container {
+    height: 200px;
+    width: 200px;
+    padding: 5px;
+    margin: 0 auto 10px auto;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #ffc2be;
+    border-radius: 50%;
+}
+
+/* Media Query to change Carousel Image Size for Small Phones */
+ 
+@media only screen and (max-width: 425px) {
+    .carousel-item #image-container {
+        width: 80%;
+        height: 80%;
+    }
+}
+
+.carousel-item #image-container img {
+    display: block;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+
+.carousel-item .customer-text {
+    padding: 10px 30px;
+    margin: 0 2px;
+}
+
+.carousel-item .customer-info {
+    padding: 30px 0 10px 0;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+.carousel-item #customer-name {
+    font-weight: bold;
+    color: #383838;
+}
+
+.carousel-item #customer-job {
+    color: gray;
+}
+
+/* Prev & Next Buttons */
+
+.carousel-control {
+    margin-top: 60px;
     position: relative;
-    border-radius: 5px;
-    background-color: #ffc2be;
-    margin: 0 20px;
+}
+
+#carousel #prev-btn {
+    display: inline-block;
+    top: 50%;
+}
+
+#carousel #next-btn {
+    display: inline-block;
+    top: 50%;
 }
