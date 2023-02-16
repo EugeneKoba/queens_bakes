@@ -63,3 +63,4 @@ nextBtn.addEventListener("click", function() {
     getPerson(currentItemId)
 })
 
+

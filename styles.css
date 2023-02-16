@@ -152,7 +152,6 @@ nav .nav-container .search-icon:hover {
     border-color: #ffc2be;
     border-radius: 50%;
 }
-
 /* Media Query to change Carousel Image Size for Small Phones */
  
 @media only screen and (max-width: 425px) {
